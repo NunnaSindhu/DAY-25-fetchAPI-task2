@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fetchAPI-task1_style.css" />
+    <title>Restcountries API details</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- //write div with heading-container class for header -->
+      <div class="heading-container">
+        <h1>REST COUNTRIES API</h1>
+        <img
+          class="icon"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7CS74ODDUeG5y3dtxAww1Mjapjrr5plp-k0hpz_KE1db2VFSZHCyy0YAVuBMDLFRudZo&usqp=CAU"
+          alt="worldmap"
+        />
+      </div>
+      <!-- //write element for search box -->
+      <div class="inputContainer">
+        <input
+          type="search"
+          class="search-box"
+          id="input"
+          placeholder="Search here for the country details..."
+        />
+        <button id="search">Search</button>
+        <button id="clear" onclick="clearSearch()">Clear</button>
+      </div>
+      <!-- //for displaying the data -->
+      <div class="mainContainer"></div>
+    </div>
+    <script src="fetchAPI-task1.js"></script>
+  </body>
+</html>
